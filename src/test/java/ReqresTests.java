@@ -104,8 +104,8 @@ public class ReqresTests {
                 .put("/api/users/2")
                 .then()
                 .statusCode(200)
-//                .body("name", equalTo("morpheus"))
-//                .body("job", equalTo("zion resident"))
+                .body("name", equalTo("morpheus"))
+                .body("job", equalTo("zion resident"))
                 .body("updatedAt", notNullValue());
     }
 
