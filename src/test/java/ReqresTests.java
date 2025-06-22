@@ -31,7 +31,7 @@ public class ReqresTests {
                 .statusCode(200)
                 .body("data.id", equalTo(2))
                 .body("data.email", equalTo("janet.weaver@reqres.in"))
-                .body("data.last_name", equalTo("W eaver"));
+                .body("data.last_name", equalTo("Weaver"));
     }
     @Test
     @DisplayName("Пользователь не найден")
