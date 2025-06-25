@@ -11,6 +11,7 @@ public class ReqresTests {
     public void testGetUsersList() {
         RestAssured
                 .given()
+                .header("x-api-key","reqres-free-v1")
                 .baseUri("https://reqres.in")
                 .log().all()
                 .when()
@@ -24,6 +25,7 @@ public class ReqresTests {
     public void testGetSingleUser() {
         RestAssured
                 .given()
+                .header("x-api-key","reqres-free-v1")
                 .baseUri("https://reqres.in")
                 .when()
                 .get("/api/users/2")
